@@ -1,0 +1,13 @@
+canvas{
+    border: 1px solid black;
+}
+
+body{
+    margin: 0;
+    background-image: url("backGroundImage4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p{
+	text-align:center;
+}

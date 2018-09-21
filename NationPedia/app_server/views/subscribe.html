@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Subscribe Form</title>
+    <link rel="stylesheet" href="subscribe.css" />
+</head>
+
+<body>
+  <p align="right"><a href="homePage">Home</a></p>
+  <h1 align="center">Sign Up Form</h1>
+  <div class="container">
+  <form action="">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type = "text"
+               placeholder = "First Name"
+               id = "fname"
+               required />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type = "text"
+               placeholder = "Last name"
+               id = "lastname"
+               required />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <input type = "text"
+               placeholder = "Country"
+               id = "Country"
+               required />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="dob">Date of Birth</label>
+      </div>
+      <div class="col-75">
+        <input type = "date"
+               id = "dob"/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="phone">Mobile</label>
+      </div>
+      <div class="col-75">
+        <input type = "text"
+               placeholder="xxxxxxxxxx"
+               pattern = "^\d{10}$"
+               id = "phone"
+               required />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="email">Email Id</label>
+      </div>
+      <div class="col-75">
+        <input type = "text"
+               placeholder = "xxxxx@xxxxx.xxx"
+               pattern = "^.+@.+\..{2,4}$"
+               id = "email"
+               required/>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Subscribe">
+    </div>
+  </form>
+</div>
+
+
+</body>
