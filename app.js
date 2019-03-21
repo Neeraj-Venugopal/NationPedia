@@ -10,9 +10,9 @@ var lineReader = require('line-reader');
 var index = require('./app_server/routes/index');
 var app = express();
 var fs = require('fs');
-var mongoose = require("mongoose");
+//var mongoose = require("mongoose");
 var nodemailer = require("nodemailer");
-mongoose.Promise = global.Promise;
+//mongoose.Promise = global.Promise;
 
 //View engine setup
 app.set('views', path.join(__dirname, 'app_server', 'views'));

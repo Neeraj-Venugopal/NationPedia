@@ -15,25 +15,25 @@ router.get('/homePage', ctrlMain.home);
  * GET text fields page.
  */
 router.get('/aboutLink', ctrlMain.get_about);
-router.get('/accountLink',ctrlMain.get_account);
+// router.get('/accountLink',ctrlMain.get_account);
 /*
  * GET Subscribe page.
  */
 
-router.get('/userlist', ctrlMain.get_userlist);
+// router.get('/userlist', ctrlMain.get_userlist);
 
-router.get('/subscribeLink', ctrlMain.get_subscribe);
+// router.get('/subscribeLink', ctrlMain.get_subscribe);
 
 
-router.get('/edituser', ctrlMain.get_update);
+// router.get('/edituser', ctrlMain.get_update);
 
-router.post('/adduser',ctrlMain.post_add_user);
+// router.post('/adduser',ctrlMain.post_add_user);
 
-router.get('/userlist/:email',ctrlMain.get_showuser);
+// router.get('/userlist/:email',ctrlMain.get_showuser);
 
-router.get('/deleteuser/:email', ctrlMain.get_deleteuser);
+// router.get('/deleteuser/:email', ctrlMain.get_deleteuser);
 
-router.post('/updateuser',ctrlMain.post_updateuser);
+// router.post('/updateuser',ctrlMain.post_updateuser);
 
 router.get('/worldMap', ctrlMain.get_worldMap);
 router.get('/countryDetails', ctrlMain.get_countryDetails);

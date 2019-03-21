@@ -3,22 +3,22 @@
  */
 
 var lineReader = require('line-reader');
-var mongoose = require("mongoose");
-mongoose.Promise = global.Promise;
+//var mongoose = require("mongoose");
+//mongoose.Promise = global.Promise;
 
-mongoose.connect("mongodb://localhost:27017/subscribedb");
-var nameSchema = new mongoose.Schema({
-    firstName: String,
-    lastName: String,
-    email: String,
-    mobile: String,
-    country: String,
-    DOB: String
-});
-var User = mongoose.model("User", nameSchema);
-var COUNTRY1 = '';
-var queryResult = '';
-var tempRes = '';
+//mongoose.connect("mongodb://localhost:27017/subscribedb");
+// var nameSchema = new mongoose.Schema({
+//     firstName: String,
+//     lastName: String,
+//     email: String,
+//     mobile: String,
+//     country: String,
+//     DOB: String
+// });
+// var User = mongoose.model("User", nameSchema);
+// var COUNTRY1 = '';
+// var queryResult = '';
+// var tempRes = '';
 
 
 /**
@@ -233,15 +233,15 @@ module.exports.get_about = function(request, result)
 {
     sendPage('./app_server/views/about.html', result);
 };
-module.exports.get_account = function(request, result) 
-{
-    sendPage('./app_server/views/account.html', result);
-};
+// module.exports.get_account = function(request, result) 
+// {
+//     sendPage('./app_server/views/account.html', result);
+// };
 
-module.exports.get_subscribe = function(request, result) 
-{
-    sendPage('./app_server/views/subscribe.html', result);
-};
+// module.exports.get_subscribe = function(request, result) 
+// {
+//     sendPage('./app_server/views/subscribe.html', result);
+// };
 
 module.exports.get_second_page = function(request, result) 
 {
