@@ -21,13 +21,12 @@ app.set('view engine', 'jade');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true })); 
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(session( {secret: "String for encrypting cookies." } ));
-
-
-
-
+app.use(session( {
+        secret: "String for encrypting cookies.",
+        resave: true,
+    } ));
 
 app.use('/', index);
 
 module.exports = app;
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
